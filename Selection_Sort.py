@@ -1,15 +1,15 @@
-def selection_sort(array) :
-    for i in range(0, len(array)) :
+def selection_sort(list) :
+    for i in range(0, len(list)) :
         min = float("inf");
-        for j in range(i, len(array)) :
+        for j in range(i, len(list)) :
             if (array[j] < min) :
-                min = array[j];
+                min = list[j];
                 loc = j;
-        sav = array[i];
-        array[i] = min;
-        array[loc] = sav;
-    for i in range(0, len(array)) :
-        print(array[i]);
+        sav = list[i];
+        list[i] = min;
+        list[loc] = sav;
+    for i in range(0, len(list)) :
+        print(list[i]);
 
 list = []; #리스트 생성
 n = int(input()); #1번째 줄에서 리스트의 길이값을 입력받는다.
